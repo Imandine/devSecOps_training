@@ -21,7 +21,7 @@ def echo():
     name = request.args.get("name", "student")
     command = "echo " + name
     result = subprocess.run(
-        command,
+        ["echo", name],
         check=False,
         capture_output=True,
         text=True
