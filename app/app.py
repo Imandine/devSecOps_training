@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return """
-    <h1>DevSecOps Security Lab</h1>
+    <h1>DevSecOps Security Lab 2</h1>
     <p>Application Python sécurisée par CI/CD</p>
     <a href='/health'>Health Check</a><br>
     <a href='/echo?name=student'>Echo</a>
