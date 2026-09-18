@@ -22,7 +22,7 @@ def echo():
     command = "echo " + name
     result = subprocess.run(
         command,
-        shell=True,
+        check=False,
         capture_output=True,
         text=True
     )
